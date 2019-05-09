@@ -1,5 +1,40 @@
 #container {
-  margin-left: 200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 70% 10%;
+  width: 450px;
+  height: 600px;
+}
+
+#title {
+  grid-area: 1 / 1 / 2 / 3;
+  font-family: Helvetica;
+  color: green;
+}
+
+#wrapper {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+#start {
+  grid-area: 3 / 1 / 4 / 2;
+  font-family: Helvetica;
+  border: none;
+  background-color: white;
+  color: green;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#score {
+  grid-area: 3 / 2 / 4 / 3;
+  line-height: 60px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  font-family: Helvetica;
 }
 
 .gridRow {
@@ -12,31 +47,28 @@
   margin: 0;
   padding: 0;
   float: left;
-}
-
-.empty {
   display: block;
   height: 20px;
   width: 20px;
+}
+
+.empty {
+
+  background-color: #dae9c5
+}
+
+.empty2 {
+  background-color: #b7d889
 }
 
 .edge {
   background-color: black;
 }
 
-#start {
-  display: block;
-  margin-top: 40px;
-}
-
-#score {
-  display: block;
-}
-
 .snake {
-  background-color: green;
+  background-color: darkgreen;
 }
 
 .point {
-  background-color: yellow;
+  background-image: url("./images/apple.png");
 }
